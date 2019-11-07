@@ -1,0 +1,28 @@
+{
+  "name": "twtr-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbarinaa/twitter-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbarinaa/twitter-bot/issues"
+  },
+  "homepage": "https://github.com/barbarinaa/twitter-bot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "save": "^2.4.0",
+    "twit": "^2.2.11",
+    "unique-random-array": "^2.0.0",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
