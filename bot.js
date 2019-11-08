@@ -6,7 +6,7 @@ const T = new twit(key);
 
 function retweet() {
   let params = {
-    q: "#sevenworldsoneplanet, monkey, pet",
+    q: "#sevenworldsoneplanet, pet",
     count: 10
   };
 
@@ -18,14 +18,14 @@ function retweet() {
       for (let dat of tweets) {
         let retweetId = dat.id_str;
         T.post("statuses/retweet/:id", { id: retweetId }, (err, response) => {
-          if (response) console.log("SURPRISE BEECH THIS ONE WORKED " + retweetId);
+          if (response) console.log("Success! I retweeted this one! " + retweetId);
           if (err)
             console.log(
-              "Uhoh sth went wrong cuz UR STUPID"
+              "Uh-oh culdn't retweet this one, I might have already retweeted it."
             );
         });
       }
     }
   });
 }
-setInterval(retweet, 1500);
+setInterval(retweet, 120000);
